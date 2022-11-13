@@ -1,0 +1,59 @@
+/**
+Custom Styles for the Admin Dashboard
+**/
+
+.notifications{
+    width:40% !important;
+    height:auto;
+    z-index: 99999;
+    position: absolute;
+    right:10;
+    top:10;
+}
+.product-thumb{
+    width:50px !important;
+    height:50px !important;
+}
+.logo-title1{
+    font-size: 24px !important;
+}
+.form-label{
+    color:#000 !important;
+}
+.admin_app_logo{
+    width:40px !important;
+    height:auto !important;
+}
+.dark .form-label{
+    color:#FFF !important;
+}
+.light .form-label{
+    color:#000 !important;
+}
+.dark  p{
+    color:#FFF !important;
+}
+.light  p{
+    color:#000 !important;
+}
+.light .form-control{
+    color: #000 !important;
+}
+.light .form-select{
+    color: #000 !important;
+}
+
+.dark .form-control{
+    color: #FFF !important;
+}
+.dark .form-select{
+    color: #FFF !important;
+}
+
+.light h1{
+    color: #000 !important;
+}
+
+.dark h1{
+    color: #FFF !important;
+}

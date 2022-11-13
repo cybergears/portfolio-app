@@ -1,0 +1,104 @@
+# SEO Friendly Rewrites
+Options +FollowSymLinks
+Options -Indexes
+RewriteEngine on
+
+
+
+#RewriteRule ^index/?$ index.php
+RewriteRule ^dashboard/?$ index.php
+RewriteRule ^login/?$ login.php
+RewriteRule ^settings/?$ profile_edit.php
+
+RewriteRule ^logout/?$ logout.php
+
+RewriteRule ^icon-view/?$ icon_view.php
+RewriteRule ^icon-add/?$ icon_add.php
+
+
+
+
+#Rules with peremeters for icon-add \n
+RewriteRule ^icon-add/([0-9_-]+)/?$ icon_add.php?edit=$1 
+#Rules with peremeters for icon-view 
+RewriteRule ^icon-view/([0-9_-]+)/?$ icon_view.php?status=$1 
+RewriteRule ^icon-view/([0-9_-]+)/?$ icon_view.php?delete=$1 
+RewriteRule ^icon-view/([0-9_-]+)/?$ icon_view.php?active=$1 
+        
+
+        #Rules with peremeters for profile-add \n
+        #RewriteRule ^profile-add/?$ profile_add.php
+        RewriteRule ^profile-add/([0-9_-]+)/?$ profile_add.php?edit=$1 
+        
+        
+        
+
+
+        #Rules with peremeters for settings-add \n
+        RewriteRule ^settings-add/?$ settings_add.php
+        RewriteRule ^settings-add/([0-9_-]+)/?$ settings_add.php?edit=$1 
+        
+        
+
+        #Rules with peremeters for social-add \n
+        RewriteRule ^social-add/?$ social_add.php
+        RewriteRule ^social-add/([0-9_-]+)/?$ social_add.php?edit=$1 
+        
+        
+        
+
+          #Rules with peremeters for social-view
+          RewriteRule ^social-view/?$ social_view.php 
+          RewriteRule ^social-view/([0-9_-]+)/?$ social_view.php?status=$1 
+          RewriteRule ^social-view/([0-9_-]+)/?$ social_view.php?delete=$1 
+          RewriteRule ^social-view/([0-9_-]+)/?$ social_view.php?active=$1 
+        
+
+        #Rules with peremeters for skill-add \n
+        RewriteRule ^skill-add/?$ skill_add.php
+        RewriteRule ^skill-add/([0-9_-]+)/?$ skill_add.php?edit=$1 
+        
+        
+        
+
+          #Rules with peremeters for skill-view
+          RewriteRule ^skill-view/?$ skill_view.php 
+          RewriteRule ^skill-view/([0-9_-]+)/?$ skill_view.php?status=$1 
+          RewriteRule ^skill-view/([0-9_-]+)/?$ skill_view.php?delete=$1 
+          RewriteRule ^skill-view/([0-9_-]+)/?$ skill_view.php?active=$1 
+        
+
+        #Rules with peremeters for experience-add \n
+        RewriteRule ^experience-add/?$ experience_add.php
+        RewriteRule ^experience-add/([0-9_-]+)/?$ experience_add.php?edit=$1 
+        
+        
+        
+
+          #Rules with peremeters for experience-view
+          RewriteRule ^experience-view/?$ experience_view.php 
+          RewriteRule ^experience-view/([0-9_-]+)/?$ experience_view.php?status=$1 
+          RewriteRule ^experience-view/([0-9_-]+)/?$ experience_view.php?delete=$1 
+          RewriteRule ^experience-view/([0-9_-]+)/?$ experience_view.php?active=$1 
+        
+
+        #Rules with peremeters for education-add \n
+        RewriteRule ^education-add/?$ education_add.php
+        RewriteRule ^education-add/([0-9_-]+)/?$ education_add.php?edit=$1 
+        
+        
+        
+
+          #Rules with peremeters for education-view
+          RewriteRule ^education-view/?$ education_view.php 
+          RewriteRule ^education-view/([0-9_-]+)/?$ education_view.php?status=$1 
+          RewriteRule ^education-view/([0-9_-]+)/?$ education_view.php?delete=$1 
+          RewriteRule ^education-view/([0-9_-]+)/?$ education_view.php?active=$1 
+        
+
+          #Rules with peremeters for contact-view
+          RewriteRule ^contact-view/?$ contact_view.php 
+          RewriteRule ^contact-view/([0-9_-]+)/?$ contact_view.php?status=$1 
+          RewriteRule ^contact-view/([0-9_-]+)/?$ contact_view.php?delete=$1 
+          RewriteRule ^contact-view/([0-9_-]+)/?$ contact_view.php?active=$1 
+        
